@@ -8,4 +8,5 @@ with open("./Input/Letters/starting_letter.txt") as letter_file:
     for name in names: 
         somente_name = name.strip()  #método python que retira espaços antes e depois das strings.
         new_leter = letter_contents.replace(PLACEHOLDER,name) #replace é um método que substitui o que está definito entre (anterior,novo).
-
+        with open(f".\Output\ReadyToSend\letter_for{somente_name}.txt") as completed_letter:
+            pass
